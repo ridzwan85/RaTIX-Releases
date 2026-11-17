@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#081321">
+<meta name="description" content="Official RaTIX Android download portal. Get the latest signed release and installation guidance.">
+<title>RaTIX — Official Download Center</title>
+<style>
+:root{color-scheme:dark;--bg:#07111f;--panel:#0d1c2e;--panel2:#11243a;--gold:#d9b45b;--gold2:#f0d58b;--ink:#f4f0e6;--muted:#aab7c6;--line:rgba(217,180,91,.22);--green:#83d6a3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#1a3550 0,transparent 48%),var(--bg);color:var(--ink);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.mark{width:42px;height:42px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-weight:900;letter-spacing:-2px;font-size:20px;box-shadow:0 0 28px #d9b45b20}.brand strong{letter-spacing:.16em;font-size:17px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.13em}.nav{display:flex;gap:22px;font-size:13px;color:var(--muted)}.nav a{text-decoration:none}.nav a:hover{color:var(--gold2)}
+.hero{text-align:center;padding:76px 0 48px}.eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.24em;text-transform:uppercase}.hero h1{font-size:clamp(38px,7vw,70px);line-height:1.05;letter-spacing:-.055em;margin:16px 0}.hero h1 span{color:var(--gold2)}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:800;font-size:14px;transition:.2s;border:1px solid var(--line)}.btn-primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#142033;border:0;box-shadow:0 8px 30px #d9b45b25}.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn-ghost{background:#ffffff08;color:var(--ink)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.section{padding:34px 0 54px}.section-head{text-align:center;margin-bottom:24px}.section-head h2{font-size:26px;margin:6px 0}.section-head p{color:var(--muted);margin:0}.download{max-width:760px;margin:auto;background:linear-gradient(145deg,#12263c,#0b192a);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 22px 70px #0005}.download-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.app-id{display:flex;gap:15px;align-items:center}.app-icon{width:58px;height:58px;border-radius:16px;background:linear-gradient(145deg,#d9b45b,#8f6b2b);color:#081321;display:grid;place-items:center;font-weight:1000;font-size:23px;letter-spacing:-3px}.app-id h3{margin:0;font-size:21px}.app-id p{margin:2px 0 0;color:var(--muted);font-size:13px}.pill{border:1px solid #83d6a355;color:var(--green);padding:5px 10px;border-radius:99px;font-size:11px;font-weight:800;white-space:nowrap}.meta{display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:22px 0;padding:14px 0;color:var(--muted);font-size:12px}.meta b{display:block;color:var(--ink);font-size:13px}.download-actions{display:flex;gap:10px;flex-wrap:wrap}.download-actions .btn{flex:1}.hint{font-size:12px;color:var(--muted);margin:13px 0 0}.status{font-size:12px;color:var(--muted);margin-top:12px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{padding:20px;border:1px solid var(--line);border-radius:15px;background:#ffffff05}.tile .num{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:.12em}.tile h3{font-size:16px;margin:8px 0 5px}.tile p{color:var(--muted);font-size:13px;margin:0}.faq{max-width:760px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:16px 2px}.faq summary{cursor:pointer;font-weight:700}.faq details p{color:var(--muted);font-size:14px;margin:10px 0 0}.footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:12px;text-align:center}.footer a{color:var(--gold2);text-decoration:none}.loading{opacity:.8}
+@media(max-width:700px){.nav{gap:12px;font-size:12px}.hero{padding:55px 0 36px}.grid{grid-template-columns:1fr}.download{padding:20px}.download-top{align-items:center}.meta{gap:14px}.download-actions{flex-direction:column}.download-actions .btn{width:100%}}
+@media(max-width:420px){.nav a:first-child{display:none}.brand strong{font-size:14px}.hero p{font-size:15px}}
+</style>
+</head>
+<body>
+<header class="wrap top">
+<a class="brand" href="#" aria-label="RaTIX home"><span class="mark">RX</span><span><strong>RaTIX</strong><small>RADIO &amp; TECHNICAL INFORMATION EXCHANGE</small></span></a>
+<nav class="nav"><a href="#download">Download</a><a href="#install">Installation</a><a href="#faq">FAQ</a></nav>
+</header>
+<main>
+<section class="wrap hero">
+<div class="eyebrow">Official Android Distribution</div>
+<h1>Technical clarity.<br><span>In your hands.</span></h1>
+<p>One place to get the official RaTIX Android application, check the latest release and follow a straightforward installation guide.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#download">↓ &nbsp; Get RaTIX</a><a class="btn btn-ghost" href="https://github.com/ridzwan85/RaTIX-Releases/releases" target="_blank" rel="noopener">Release history ↗</a></div>
+</section>
+<section class="wrap section" id="download">
+<div class="section-head"><div class="eyebrow">Latest release</div><h2>Download RaTIX</h2><p>Official signed APK distributed through GitHub Releases.</p></div>
+<div class="download">
+<div class="download-top"><div class="app-id"><div class="app-icon">RX</div><div><h3>RaTIX for Android</h3><p>Official application package</p></div></div><span class="pill">● OFFICIAL RELEASE</span></div>
+<div class="meta"><div>VERSION<b id="version">Checking…</b></div><div>UPDATED<b id="date">—</b></div><div>PACKAGE<b>Android APK</b></div></div>
+<div class="download-actions"><a class="btn btn-primary" id="apk" href="https://github.com/ridzwan85/RaTIX-Releases/releases/latest" target="_blank" rel="noopener">↓ &nbsp; Download APK</a><a class="btn btn-ghost" id="release" href="https://github.com/ridzwan85/RaTIX-Releases/releases/latest" target="_blank" rel="noopener">View release notes ↗</a></div>
+<p class="hint">Download only from this official portal or the RaTIX GitHub Releases page. Android may ask you to allow installation from your browser or file manager.</p>
+<div class="status" id="status" aria-live="polite">Loading latest release information…</div>
+</div>
+</section>
+<section class="wrap section" id="install">
+<div class="section-head"><div class="eyebrow">Quick start</div><h2>Install in three steps</h2><p>Follow these steps after downloading the APK.</p></div>
+<div class="grid">
+<article class="tile"><div class="num">STEP 01</div><h3>Download the APK</h3><p>Tap “Download APK” above and wait for the file to finish downloading.</p></article>
+<article class="tile"><div class="num">STEP 02</div><h3>Allow installation</h3><p>If Android prompts you, allow your browser or file manager to install apps from this source.</p></article>
+<article class="tile"><div class="num">STEP 03</div><h3>Install and open</h3><p>Open the downloaded APK, review the Android installer prompt and launch RaTIX.</p></article>
+</div>
+</section>
+<section class="wrap section" id="faq">
+<div class="section-head"><div class="eyebrow">Help center</div><h2>Frequently asked questions</h2></div>
+<div class="faq">
+<details><summary>Is this the official RaTIX download?</summary><p>Yes. This portal links to releases published in the official RaTIX-Releases GitHub repository.</p></details>
+<details><summary>Android blocks the installation. What should I do?</summary><p>Use Android Settings to allow installation for the browser or file manager you used to open the APK. Only proceed if the file came from the official RaTIX release page.</p></details>
+<details><summary>How do I update RaTIX?</summary><p>Check the app's update function or return to this portal and download the latest published release.</p></details>
+<details><summary>Where can I see previous versions?</summary><p>Open the <a href="https://github.com/ridzwan85/RaTIX-Releases/releases" target="_blank" rel="noopener">RaTIX Releases page</a> to view published versions and their release notes.</p></details>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="wrap">© <span id="year"></span> RaTIX · Radio &amp; Technical Information Exchange<br><a href="https://github.com/ridzwan85/RaTIX-Releases" target="_blank" rel="noopener">Official release repository</a></div></footer>
+<script>
+const api='https://api.github.com/repos/ridzwan85/RaTIX-Releases/releases/latest';
+document.getElementById('year').textContent=new Date().getFullYear();
+(async()=>{const version=document.getElementById('version'),date=document.getElementById('date'),apk=document.getElementById('apk'),release=document.getElementById('release'),status=document.getElementById('status');try{const response=await fetch(api,{headers:{Accept:'application/vnd.github+json'}});if(!response.ok)throw new Error('Release information is temporarily unavailable.');const data=await response.json();const asset=(data.assets||[]).find(a=>a.name.toLowerCase()==='ratix.apk')||(data.assets||[]).find(a=>a.name.toLowerCase().endsWith('.apk'));version.textContent=data.tag_name||data.name||'Latest';date.textContent=data.published_at?new Date(data.published_at).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}):'—';release.href=data.html_url||'https://github.com/ridzwan85/RaTIX-Releases/releases/latest';if(asset){apk.href=asset.browser_download_url;apk.setAttribute('download',asset.name);status.textContent='Latest release loaded · '+asset.name;}else{apk.href=release.href;status.textContent='Release found, but no APK asset was detected. Open release notes to check available files.';}}catch(error){version.textContent='See latest release';status.textContent=error.message+' Use the official release page link to download.';apk.href='https://github.com/ridzwan85/RaTIX-Releases/releases/latest';}})();
+</script>
+</body>
+</html>
